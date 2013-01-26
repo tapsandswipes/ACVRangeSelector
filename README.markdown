@@ -2,6 +2,7 @@
 
 ACVRangeSelector is a control similar to UISlider that allows you to select a range. 
 
+![Ramge Selector sample image](https://github.com/tapsandswipes/ACVRangeSelector/raw/master/sample.png)
 
 ###Installation
 
