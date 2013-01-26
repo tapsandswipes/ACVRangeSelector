@@ -5,19 +5,7 @@ ACVRangeSelector is a control similar to UISlider that allows you to select a ra
 
 ###Installation
 
-#### Via CocoaPods
-
-The easiest way to install ACVRangeSelector is via [CocoaPods](http://cocoapods.org). Add this line to your Podfile:
-
-```sh
-pod 'ACVRangeSelector'
-```
-
-and run `pod install`. 
-
-#### Manual
-
-You can also install it manually by copying to project these two files: 
+You can install this component by copying to your project these two files: 
 
 ```objective-c
 ACVRangeSelector.h
