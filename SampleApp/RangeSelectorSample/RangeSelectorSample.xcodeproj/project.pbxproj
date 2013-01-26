@@ -1,0 +1,384 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A91D9DD116B4000200484DAC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A91D9DD016B4000200484DAC /* UIKit.framework */; };
+		A91D9DD316B4000200484DAC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A91D9DD216B4000200484DAC /* Foundation.framework */; };
+		A91D9DD516B4000200484DAC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A91D9DD416B4000200484DAC /* CoreGraphics.framework */; };
+		A91D9DDB16B4000200484DAC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A91D9DD916B4000200484DAC /* InfoPlist.strings */; };
+		A91D9DDD16B4000200484DAC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A91D9DDC16B4000200484DAC /* main.m */; };
+		A91D9DE116B4000200484DAC /* ACVAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A91D9DE016B4000200484DAC /* ACVAppDelegate.m */; };
+		A91D9DE316B4000200484DAC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = A91D9DE216B4000200484DAC /* Default.png */; };
+		A91D9DE516B4000200484DAC /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A91D9DE416B4000200484DAC /* Default@2x.png */; };
+		A91D9DE716B4000200484DAC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A91D9DE616B4000200484DAC /* Default-568h@2x.png */; };
+		A91D9DEA16B4000200484DAC /* ACVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A91D9DE916B4000200484DAC /* ACVViewController.m */; };
+		A91D9DED16B4000200484DAC /* ACVViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = A91D9DEB16B4000200484DAC /* ACVViewController_iPhone.xib */; };
+		A91D9DF016B4000200484DAC /* ACVViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = A91D9DEE16B4000200484DAC /* ACVViewController_iPad.xib */; };
+		A91D9DFD16B4010A00484DAC /* ACVRangeSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = A91D9DFC16B4010A00484DAC /* ACVRangeSelector.m */; };
+		A91D9E0016B408AC00484DAC /* ACVRangeSelector.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A91D9DFF16B408AC00484DAC /* ACVRangeSelector.bundle */; };
+		A91D9E0B16B452F500484DAC /* connector.png in Resources */ = {isa = PBXBuildFile; fileRef = A91D9E0716B452F500484DAC /* connector.png */; };
+		A91D9E0C16B452F500484DAC /* left-handle.png in Resources */ = {isa = PBXBuildFile; fileRef = A91D9E0816B452F500484DAC /* left-handle.png */; };
+		A91D9E0D16B452F500484DAC /* middle-handle.png in Resources */ = {isa = PBXBuildFile; fileRef = A91D9E0916B452F500484DAC /* middle-handle.png */; };
+		A91D9E0E16B452F500484DAC /* right-handle.png in Resources */ = {isa = PBXBuildFile; fileRef = A91D9E0A16B452F500484DAC /* right-handle.png */; };
+		A91D9E1216B4651D00484DAC /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A91D9E1016B4651D00484DAC /* Icon.png */; };
+		A91D9E1316B4651D00484DAC /* Icon72.png in Resources */ = {isa = PBXBuildFile; fileRef = A91D9E1116B4651D00484DAC /* Icon72.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A91D9DCC16B4000200484DAC /* RangeSelectorSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RangeSelectorSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A91D9DD016B4000200484DAC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A91D9DD216B4000200484DAC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A91D9DD416B4000200484DAC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A91D9DD816B4000200484DAC /* RangeSelectorSample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RangeSelectorSample-Info.plist"; sourceTree = "<group>"; };
+		A91D9DDA16B4000200484DAC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A91D9DDC16B4000200484DAC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A91D9DDE16B4000200484DAC /* RangeSelectorSample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RangeSelectorSample-Prefix.pch"; sourceTree = "<group>"; };
+		A91D9DDF16B4000200484DAC /* ACVAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ACVAppDelegate.h; sourceTree = "<group>"; };
+		A91D9DE016B4000200484DAC /* ACVAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ACVAppDelegate.m; sourceTree = "<group>"; };
+		A91D9DE216B4000200484DAC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		A91D9DE416B4000200484DAC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		A91D9DE616B4000200484DAC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		A91D9DE816B4000200484DAC /* ACVViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ACVViewController.h; sourceTree = "<group>"; };
+		A91D9DE916B4000200484DAC /* ACVViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ACVViewController.m; sourceTree = "<group>"; };
+		A91D9DEC16B4000200484DAC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ACVViewController_iPhone.xib; sourceTree = "<group>"; };
+		A91D9DEF16B4000200484DAC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ACVViewController_iPad.xib; sourceTree = "<group>"; };
+		A91D9DFB16B4010A00484DAC /* ACVRangeSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACVRangeSelector.h; sourceTree = "<group>"; };
+		A91D9DFC16B4010A00484DAC /* ACVRangeSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACVRangeSelector.m; sourceTree = "<group>"; };
+		A91D9DFF16B408AC00484DAC /* ACVRangeSelector.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ACVRangeSelector.bundle; sourceTree = "<group>"; };
+		A91D9E0716B452F500484DAC /* connector.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = connector.png; path = Images/connector.png; sourceTree = "<group>"; };
+		A91D9E0816B452F500484DAC /* left-handle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "left-handle.png"; path = "Images/left-handle.png"; sourceTree = "<group>"; };
+		A91D9E0916B452F500484DAC /* middle-handle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "middle-handle.png"; path = "Images/middle-handle.png"; sourceTree = "<group>"; };
+		A91D9E0A16B452F500484DAC /* right-handle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "right-handle.png"; path = "Images/right-handle.png"; sourceTree = "<group>"; };
+		A91D9E1016B4651D00484DAC /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = Images/Icon.png; sourceTree = "<group>"; };
+		A91D9E1116B4651D00484DAC /* Icon72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon72.png; path = Images/Icon72.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A91D9DC916B4000200484DAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A91D9DD116B4000200484DAC /* UIKit.framework in Frameworks */,
+				A91D9DD316B4000200484DAC /* Foundation.framework in Frameworks */,
+				A91D9DD516B4000200484DAC /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A91D9DC116B4000100484DAC = {
+			isa = PBXGroup;
+			children = (
+				A91D9DFA16B4010A00484DAC /* ACVRangeSelector */,
+				A91D9DD616B4000200484DAC /* RangeSelectorSample */,
+				A91D9DCF16B4000200484DAC /* Frameworks */,
+				A91D9DCD16B4000200484DAC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A91D9DCD16B4000200484DAC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A91D9DCC16B4000200484DAC /* RangeSelectorSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A91D9DCF16B4000200484DAC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A91D9DD016B4000200484DAC /* UIKit.framework */,
+				A91D9DD216B4000200484DAC /* Foundation.framework */,
+				A91D9DD416B4000200484DAC /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A91D9DD616B4000200484DAC /* RangeSelectorSample */ = {
+			isa = PBXGroup;
+			children = (
+				A91D9E0116B415DD00484DAC /* Resources */,
+				A91D9DDF16B4000200484DAC /* ACVAppDelegate.h */,
+				A91D9DE016B4000200484DAC /* ACVAppDelegate.m */,
+				A91D9DE816B4000200484DAC /* ACVViewController.h */,
+				A91D9DE916B4000200484DAC /* ACVViewController.m */,
+				A91D9DD716B4000200484DAC /* Supporting Files */,
+			);
+			path = RangeSelectorSample;
+			sourceTree = "<group>";
+		};
+		A91D9DD716B4000200484DAC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A91D9DD816B4000200484DAC /* RangeSelectorSample-Info.plist */,
+				A91D9DD916B4000200484DAC /* InfoPlist.strings */,
+				A91D9DDC16B4000200484DAC /* main.m */,
+				A91D9DDE16B4000200484DAC /* RangeSelectorSample-Prefix.pch */,
+				A91D9DE216B4000200484DAC /* Default.png */,
+				A91D9DE416B4000200484DAC /* Default@2x.png */,
+				A91D9DE616B4000200484DAC /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A91D9DFA16B4010A00484DAC /* ACVRangeSelector */ = {
+			isa = PBXGroup;
+			children = (
+				A91D9DFF16B408AC00484DAC /* ACVRangeSelector.bundle */,
+				A91D9DFB16B4010A00484DAC /* ACVRangeSelector.h */,
+				A91D9DFC16B4010A00484DAC /* ACVRangeSelector.m */,
+			);
+			name = ACVRangeSelector;
+			path = ../../ACVRangeSelector;
+			sourceTree = "<group>";
+		};
+		A91D9E0116B415DD00484DAC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A91D9E0F16B461BA00484DAC /* XIBs */,
+				A91D9E0216B415E600484DAC /* Images */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		A91D9E0216B415E600484DAC /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				A91D9E1016B4651D00484DAC /* Icon.png */,
+				A91D9E1116B4651D00484DAC /* Icon72.png */,
+				A91D9E0716B452F500484DAC /* connector.png */,
+				A91D9E0816B452F500484DAC /* left-handle.png */,
+				A91D9E0916B452F500484DAC /* middle-handle.png */,
+				A91D9E0A16B452F500484DAC /* right-handle.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		A91D9E0F16B461BA00484DAC /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				A91D9DEB16B4000200484DAC /* ACVViewController_iPhone.xib */,
+				A91D9DEE16B4000200484DAC /* ACVViewController_iPad.xib */,
+			);
+			name = XIBs;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A91D9DCB16B4000200484DAC /* RangeSelectorSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A91D9DF316B4000200484DAC /* Build configuration list for PBXNativeTarget "RangeSelectorSample" */;
+			buildPhases = (
+				A91D9DC816B4000200484DAC /* Sources */,
+				A91D9DC916B4000200484DAC /* Frameworks */,
+				A91D9DCA16B4000200484DAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RangeSelectorSample;
+			productName = RangeSelectorSample;
+			productReference = A91D9DCC16B4000200484DAC /* RangeSelectorSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A91D9DC316B4000100484DAC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ACV;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Antonio Cabezuelo Vivo";
+			};
+			buildConfigurationList = A91D9DC616B4000100484DAC /* Build configuration list for PBXProject "RangeSelectorSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A91D9DC116B4000100484DAC;
+			productRefGroup = A91D9DCD16B4000200484DAC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A91D9DCB16B4000200484DAC /* RangeSelectorSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A91D9DCA16B4000200484DAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A91D9DDB16B4000200484DAC /* InfoPlist.strings in Resources */,
+				A91D9DE316B4000200484DAC /* Default.png in Resources */,
+				A91D9DE516B4000200484DAC /* Default@2x.png in Resources */,
+				A91D9DE716B4000200484DAC /* Default-568h@2x.png in Resources */,
+				A91D9DED16B4000200484DAC /* ACVViewController_iPhone.xib in Resources */,
+				A91D9DF016B4000200484DAC /* ACVViewController_iPad.xib in Resources */,
+				A91D9E0016B408AC00484DAC /* ACVRangeSelector.bundle in Resources */,
+				A91D9E0B16B452F500484DAC /* connector.png in Resources */,
+				A91D9E0C16B452F500484DAC /* left-handle.png in Resources */,
+				A91D9E0D16B452F500484DAC /* middle-handle.png in Resources */,
+				A91D9E0E16B452F500484DAC /* right-handle.png in Resources */,
+				A91D9E1216B4651D00484DAC /* Icon.png in Resources */,
+				A91D9E1316B4651D00484DAC /* Icon72.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A91D9DC816B4000200484DAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A91D9DDD16B4000200484DAC /* main.m in Sources */,
+				A91D9DE116B4000200484DAC /* ACVAppDelegate.m in Sources */,
+				A91D9DEA16B4000200484DAC /* ACVViewController.m in Sources */,
+				A91D9DFD16B4010A00484DAC /* ACVRangeSelector.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A91D9DD916B4000200484DAC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A91D9DDA16B4000200484DAC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A91D9DEB16B4000200484DAC /* ACVViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A91D9DEC16B4000200484DAC /* en */,
+			);
+			name = ACVViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		A91D9DEE16B4000200484DAC /* ACVViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A91D9DEF16B4000200484DAC /* en */,
+			);
+			name = ACVViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A91D9DF116B4000200484DAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = YES;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A91D9DF216B4000200484DAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A91D9DF416B4000200484DAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RangeSelectorSample/RangeSelectorSample-Prefix.pch";
+				INFOPLIST_FILE = "RangeSelectorSample/RangeSelectorSample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A91D9DF516B4000200484DAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RangeSelectorSample/RangeSelectorSample-Prefix.pch";
+				INFOPLIST_FILE = "RangeSelectorSample/RangeSelectorSample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A91D9DC616B4000100484DAC /* Build configuration list for PBXProject "RangeSelectorSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A91D9DF116B4000200484DAC /* Debug */,
+				A91D9DF216B4000200484DAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A91D9DF316B4000200484DAC /* Build configuration list for PBXNativeTarget "RangeSelectorSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A91D9DF416B4000200484DAC /* Debug */,
+				A91D9DF516B4000200484DAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A91D9DC316B4000100484DAC /* Project object */;
+}
