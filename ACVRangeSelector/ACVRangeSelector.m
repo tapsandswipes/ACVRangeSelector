@@ -46,11 +46,11 @@ static NSString * const kConnectionImage = @"connectionImage";
     UIImageView *iV;
     
     self.backgroundColor = [UIColor clearColor];
-    self.minimumValue = 0;
-    self.maximumValue = 100;
-    self.leftValue = 0;
-    self.rightValue = 100;
-    self.scaleMiddleThumb = YES;
+    _minimumValue = 0;
+    _maximumValue = 100;
+    _leftValue = 0;
+    _rightValue = 100;
+    _scaleMiddleThumb = YES;
     
     self.statesData = [[NSMutableDictionary alloc] init];
     
@@ -77,14 +77,17 @@ static NSString * const kConnectionImage = @"connectionImage";
     NSBundle *selectorBundle = [NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:@"ACVRangeSelector" ofType:@"bundle"]];
     
     if (selectorBundle) {
-        self.leftPointerOffset = 11;
-        self.rightPointerOffset = 11;
-        self.connectionOffset = 2;
-        self.trackImage = [[UIImage imageWithContentsOfFile:[selectorBundle pathForResource:@"track" ofType:@"png" inDirectory:@"Images"]] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 3, 0, 3)];
-        [self setLeftThumbImage:[UIImage imageWithContentsOfFile:[selectorBundle pathForResource:@"pointer-handle" ofType:@"png" inDirectory:@"Images"]] forState:UIControlStateNormal];
-        [self setRightThumbImage:[UIImage imageWithContentsOfFile:[selectorBundle pathForResource:@"pointer-handle" ofType:@"png" inDirectory:@"Images"]] forState:UIControlStateNormal];
-        [self setMiddleThumbImage:[UIImage imageWithContentsOfFile:[selectorBundle pathForResource:@"handle" ofType:@"png" inDirectory:@"Images"]] forState:UIControlStateNormal];
-        [self setConnectionImage:[[UIImage imageWithContentsOfFile:[selectorBundle pathForResource:@"connector" ofType:@"png" inDirectory:@"Images"]] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 4, 0, 4)] forState:UIControlStateNormal];
+        _leftPointerOffset = 11;
+        _rightPointerOffset = 11;
+        _connectionOffset = 2;
+        
+        _trackImage = [[UIImage imageNamed:@"ACVRangeSelector.bundle/Images/track.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 3, 0, 3)];
+        
+        NSMutableDictionary *data = [self dataForState:UIControlStateNormal create:YES];
+        data[kLeftThumbImage] = [UIImage imageNamed:@"ACVRangeSelector.bundle/Images/pointer-handle.png"];
+        data[kRightThumbImage] = [UIImage imageNamed:@"ACVRangeSelector.bundle/Images/pointer-handle.png"];
+        data[kMiddleThumbImage] = [UIImage imageNamed:@"ACVRangeSelector.bundle/Images/handle.png"];
+        data[kConnectionImage] = [[UIImage imageNamed:@"ACVRangeSelector.bundle/Images/connector.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 4, 0, 4)];
     }
 }
 
@@ -282,6 +285,12 @@ static NSString * const kConnectionImage = @"connectionImage";
 }
 
 #pragma mark - 
+
+- (void)willMoveToSuperview:(UIView *)newSuperview {
+    [super willMoveToSuperview:newSuperview];
+    
+    [self updateUI];
+}
 
 - (NSMutableDictionary*)dataForState:(UIControlState)state {
     return [self dataForState:state create:NO];
