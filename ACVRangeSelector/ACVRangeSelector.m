@@ -8,6 +8,14 @@
 
 #import "ACVRangeSelector.h"
 
+#if !__has_feature(objc_arc)
+#error ACVRangeSelector must be built with ARC.
+// You can turn on ARC for only ACVRangeSelector files by adding -fobjc-arc to the build phase for each of its files.
+#endif
+
+#if __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_5_0
+#error ACVRangeSelector needs a deployment target of 5.0+
+#endif
 
 static NSString * const kLeftThumbImage = @"leftThumbImage";
 static NSString * const kRightThumbImage = @"rightThumbImage";
