@@ -2,10 +2,23 @@
 
 ACVRangeSelector is a control similar to UISlider that allows you to select a range. 
 
+![Ramge Selector sample image](https://github.com/tapsandswipes/ACVRangeSelector/raw/master/sample.png)
 
 ###Installation
 
-You can install this component by copying to your project these two files: 
+#### Via CocoaPods
+ 
+The easiest way to install ACVRangeSelector is via [CocoaPods](http://cocoapods.org). Add this line to your Podfile:
+ 
+```sh
+pod 'ACVRangeSelector'
+```
+ 
+and run `pod install`. 
+ 
+#### Manual
+ 
+You can also install it manually by copying to your project these two files: 
 
 ```objective-c
 ACVRangeSelector.h
@@ -13,6 +26,12 @@ ACVRangeSelector.m
 ```
 
 If you want to use the default appearance, add also the `ACVRangeSelector.bundle` to your project.
+
+## Usage
+
+ACVRangeSelector uses ARC and the deploiment target is iOS 5.0 as it uses some functionality only available on iOS 5.0 and up.
+
+
 
 ## Contact
 
